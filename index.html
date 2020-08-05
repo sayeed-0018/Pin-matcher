@@ -90,6 +90,8 @@
                 var count = 3;
                 var submitBtn = document.getElementById("submit-button");
                 submitBtn.addEventListener('click', function (){
+                    hideNotify()
+                    count--;
                     var originalValue = document.getElementById("gen-input").value;
                     var submitValue = document.getElementById("sub-input").value;
                     if (originalValue =="" || submitValue =="" ) {
